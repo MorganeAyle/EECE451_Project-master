@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.morgane.eece451_project.Piconet">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient">
+
+        <Button
+            android:id="@+id/disconnectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="21dp"
+            android:layout_weight="1"
+            android:onClick="Disconnect"
+            android:text="Disconnect"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="402dp" />
+
+        <Button
+            android:id="@+id/receiveMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginTop="69dp"
+            android:onClick="ReceiveMessage"
+            android:text="receive message" />
+
+        <Button
+            android:id="@+id/sendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sendFile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:onClick="SendMessage"
+            android:text="  send message  " />
+
+        <Button
+            android:id="@+id/sendFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sendMessage"
+            android:layout_alignStart="@+id/sendMessage"
+            android:layout_below="@+id/receiveMessage"
+            android:layout_marginTop="102dp"
+            android:text="       SEND FILE       "
+            android:onClick="SendFile"/>
+
+        <Button
+            android:id="@+id/receiveFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/receiveMessage"
+            android:layout_alignStart="@+id/receiveMessage"
+            android:layout_alignTop="@+id/sendFile"
+            android:text="    RECEIVE FILE    "
+            android:onClick="ReceiveFile"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

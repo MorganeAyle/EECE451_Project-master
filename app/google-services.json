@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "528097363362",
+    "firebase_url": "https://eece451-f4962.firebaseio.com",
+    "project_id": "eece451-f4962",
+    "storage_bucket": "eece451-f4962.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528097363362:android:a66bf14080ac32f6",
+        "android_client_info": {
+          "package_name": "com.example.morgane.eece451"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528097363362-1s851qo52bvf31n5uth5l9nddfgom11s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.morgane.eece451",
+            "certificate_hash": "01c4b94a2f9118331b33597bf132cc099056c593"
+          }
+        },
+        {
+          "client_id": "528097363362-7v412funsctmgp3cu9juplpj9g8a3so9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACqFNeGWhaPSuU-TjjWUbU76CgB-8CAnw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528097363362-7v412funsctmgp3cu9juplpj9g8a3so9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528097363362:android:e53e52792ea91836",
+        "android_client_info": {
+          "package_name": "com.example.morgane.eece451_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528097363362-7v412funsctmgp3cu9juplpj9g8a3so9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACqFNeGWhaPSuU-TjjWUbU76CgB-8CAnw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

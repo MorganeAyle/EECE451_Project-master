@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context="com.example.morgane.eece451_project.MainActivityText">
+
+    <EditText
+        android:id="@+id/txtImageName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textColorHint="@android:color/white"
+
+        android:textColor="@android:color/white"
+        android:ems="10"
+        android:hint="Receiver"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtImageName2"
+        android:layout_width="match_parent"
+        android:background="@null"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_height="162dp"
+        android:ems="10"
+        android:hint="Type your message here"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/Send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnUpload_Click"
+        android:text="send message" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:layout_height="149dp" />
+
+    <TextView
+        android:id="@+id/ResultText"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:layout_height="69dp"
+        android:textSize="18sp" />
+
+</LinearLayout>

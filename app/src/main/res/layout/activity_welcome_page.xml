@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.morgane.eece451_project.WelcomePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient">
+
+        <Button
+            android:id="@+id/idButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/sendButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_marginTop="58dp"
+            android:onClick="idButtonClick"
+            android:text="Identify Me!"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <Button
+            android:id="@+id/checkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:onClick="checkButtonClick"
+            android:text="Check My Connections"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="160dp" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:onClick="sendButtonClick"
+            android:text="Send Files"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="277dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

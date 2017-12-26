@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.morgane.eece451_project.Connections">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/gradient"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/btText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/wifiText"
+            android:layout_alignStart="@+id/wifiText"
+            android:layout_below="@+id/wifiText"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="47dp"
+            android:text="Bluetooth:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cellularText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btText"
+            android:layout_alignStart="@+id/btText"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/btText"
+            android:layout_marginTop="51dp"
+            android:text="Cellular:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/networkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cellularText"
+            android:layout_alignStart="@+id/cellularText"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/cellularText"
+            android:layout_marginTop="96dp"
+            android:text="Network Type:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/signalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/networkText"
+            android:layout_alignStart="@+id/networkText"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/networkText"
+            android:layout_marginTop="42dp"
+            android:text="Signal Strength:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/wifiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/white"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="41dp"
+            android:text="Wi-Fi:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/wifiField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/wifiText"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_toEndOf="@+id/wifiText"
+            android:layout_toRightOf="@+id/wifiText"
+            android:textAlignment="viewStart"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/btField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btText"
+            android:layout_alignLeft="@+id/wifiField"
+            android:textColor="@android:color/white"
+            android:layout_alignStart="@+id/wifiField"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/cellularField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/networkText"
+            android:layout_toEndOf="@+id/btField"
+            android:layout_toRightOf="@+id/btField"
+            android:textColor="@android:color/white"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/networkField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/networkText"
+            android:layout_alignLeft="@+id/cellularField"
+            android:textColor="@android:color/white"
+            android:layout_alignStart="@+id/cellularField"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/signalField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/signalText"
+            android:textColor="@android:color/white"
+            android:layout_alignStart="@+id/networkField"
+            android:textSize="18sp"
+            android:layout_alignLeft="@+id/networkField" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

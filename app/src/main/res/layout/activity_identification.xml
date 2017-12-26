@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.morgane.eece451_project.Identification">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/gradient"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/macText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"
+            android:text="MAC address:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/serialText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/macText"
+            android:layout_alignStart="@+id/macText"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/macText"
+            android:layout_marginTop="76dp"
+            android:text="Serial number:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/imeiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/serialText"
+            android:textColor="@android:color/white"
+            android:layout_alignStart="@+id/serialText"
+            android:layout_below="@+id/serialText"
+            android:layout_marginTop="63dp"
+            android:text="IMEI:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/macField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/macText"
+            android:layout_alignBottom="@+id/macText"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/phoneText"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/phoneText" />
+
+        <TextView
+            android:id="@+id/serialField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/serialText"
+            android:textColor="@android:color/white"
+            android:layout_alignLeft="@+id/macField"
+            android:layout_alignStart="@+id/macField"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/imeiField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imeiText"
+            android:layout_alignLeft="@+id/serialField"
+            android:layout_alignStart="@+id/serialField"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/phoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imeiText"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/imeiText"
+            android:layout_marginTop="61dp"
+            android:text="Phone Operator:"
+            android:textSize="18sp"
+            android:layout_alignLeft="@+id/imeiText" />
+
+        <TextView
+            android:id="@+id/phoneField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/phoneText"
+            android:textColor="@android:color/white"
+            android:layout_alignStart="@+id/imeiField"
+            android:textSize="18sp"
+            android:layout_alignLeft="@+id/imeiField" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
